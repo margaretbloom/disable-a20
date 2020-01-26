@@ -1,0 +1,15 @@
+floppya: 1_44=a20, status=inserted
+boot: floppy
+romimage: file=$BXSHARE/BIOS-bochs-latest, address=0
+vgaromimage: file=$BXSHARE/VGABIOS-lgpl-latest
+vga: extension=none
+megs: 32
+cpu: count=1, ips=10000000
+clock: sync=none, time0=local
+log: -
+logprefix: %t%e%d
+debug: action=ignore
+info: action=report
+error: action=report
+magic_break: enabled=1
+port_e9_hack: enabled=0
